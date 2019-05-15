@@ -187,7 +187,7 @@ class MapServer
                map_resp_.map.info.resolution);
       meta_data_message_ = map_resp_.map.info;
 
-      service = n.advertiseService("static_map", &MapServer::mapCallback, this);
+      service = n.advertiseService("~/static_map", &MapServer::mapCallback, this);
       //pub = n.advertise<nav_msgs::MapMetaData>("map_metadata", 1,
 
       // Latched publisher for metadata
